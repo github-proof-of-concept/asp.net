@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Hosting</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTargetFramework)</TargetFramework>
+		<description>Provides default infrastructure types for hosting and running OWIN-based applications.</description>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="..\Owin.Loader\Constants.cs" Link="Loader\Constants.cs" />
+		<Compile Include="..\Owin.Loader\DefaultLoader.cs" Link="Loader\DefaultLoader.cs" />
+		<Compile Include="..\Owin.Loader\NullLoader.cs" Link="Loader\NullLoader.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Owin" Version="$(OwinVersion)" />
+		<InternalsVisibleTo Include="Microsoft.Owin.Hosting.Tests" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Microsoft.Owin\Microsoft.Owin.csproj" />
+	</ItemGroup>
+</Project>

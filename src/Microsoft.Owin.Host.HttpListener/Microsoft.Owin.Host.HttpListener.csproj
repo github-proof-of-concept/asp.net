@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Host.HttpListener</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTargetFramework)</TargetFramework>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<description>OWIN server built on the .NET Framework's HttpListener class. Currently the default server used for self-hosting.</description>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Owin" Version="$(OwinVersion)" />
+		<InternalsVisibleTo Include="Microsoft.Owin.Host.HttpListener.Tests" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Microsoft.Owin\Microsoft.Owin.csproj" />
+	</ItemGroup>
+</Project>

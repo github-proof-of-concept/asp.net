@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.FileSystems</RootNamespace>
+		<TargetFramework>net4.5</TargetFramework>
+		<description>This package contains file system abstractions and implementations.</description>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Security.Tests</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTestTargetFramework)</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Shouldly" Version="$(ShouldlyVersion)" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.ActiveDirectory\Microsoft.Owin.Security.ActiveDirectory.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Cookies\Microsoft.Owin.Security.Cookies.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Facebook\Microsoft.Owin.Security.Facebook.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Google\Microsoft.Owin.Security.Google.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Jwt\Microsoft.Owin.Security.Jwt.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.MicrosoftAccount\Microsoft.Owin.Security.MicrosoftAccount.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.OAuth\Microsoft.Owin.Security.OAuth.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.OpenIdConnect\Microsoft.Owin.Security.OpenIdConnect.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Twitter\Microsoft.Owin.Security.Twitter.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.WsFederation\Microsoft.Owin.Security.WsFederation.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security\Microsoft.Owin.Security.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Testing\Microsoft.Owin.Testing.csproj" />
+	</ItemGroup>
+</Project>

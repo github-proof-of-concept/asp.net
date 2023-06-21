@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Host.SystemWeb.Tests</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTestTargetFramework)</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Shouldly" Version="$(ShouldlyVersion)" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Host.SystemWeb\Microsoft.Owin.Host.SystemWeb.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="System.Configuration" />
+	  <Reference Include="System.Web" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <!-- This repo version -->
+    <VersionPrefix>4.2.3</VersionPrefix>
+    <PreReleaseVersionLabel>preview</PreReleaseVersionLabel>
+    <PreReleaseVersionIteration>1</PreReleaseVersionIteration>
+    <DotNetFinalVersionKind Condition="'$(PreReleaseVersionLabel)' == 'rtw'">release</DotNetFinalVersionKind>
+    <!-- Opt-out repo features -->
+    <UsingToolXliff>false</UsingToolXliff>
+    <!-- Libs -->
+    <OwinVersion>1.0.0</OwinVersion>
+    <ShouldlyVersion>1.1.1.1</ShouldlyVersion>
+    <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
+    <IdentityModelVersion>5.3.0</IdentityModelVersion>
+  </PropertyGroup>
+</Project>

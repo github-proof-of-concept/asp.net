@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Host.SystemWeb</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTargetFramework)</TargetFramework>
+		<description>OWIN server that enables OWIN-based applications to run on IIS using the ASP.NET request pipeline.</description>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="..\Owin.Loader\Constants.cs" Link="Loader\Constants.cs" />
+		<Compile Include="..\Owin.Loader\DefaultLoader.cs" Link="Loader\DefaultLoader.cs" />
+		<Compile Include="..\Owin.Loader\NullLoader.cs" Link="Loader\NullLoader.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<InternalsVisibleTo Include="Microsoft.Owin.Host.SystemWeb.Tests" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Owin" Version="$(OwinVersion)" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Microsoft.Owin\Microsoft.Owin.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="System.Configuration" />
+	  <Reference Include="System.Web" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.FileSystems.Tests</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTestTargetFramework)</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Shouldly" Version="$(ShouldlyVersion)" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Microsoft.Owin.FileSystems\Microsoft.Owin.FileSystems.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="File.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="Resources\ResourcesInSubdirectory\File3.txt" />
+		<EmbeddedResource Include="Resources\File.txt" />
+		<Content Include="sub\File2.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>

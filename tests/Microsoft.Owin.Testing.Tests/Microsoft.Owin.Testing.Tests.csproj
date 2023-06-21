@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Testing.Tests</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTestTargetFramework)</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Microsoft.Owin.Diagnostics\Microsoft.Owin.Diagnostics.csproj" />
+		<ProjectReference Include="..\..\src\Microsoft.Owin.Testing\Microsoft.Owin.Testing.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+</Project>

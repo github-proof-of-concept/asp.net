@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>CertInstaller</RootNamespace>
+		<TargetFramework>net4.5</TargetFramework>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<IsShipping>false</IsShipping>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+</Project>

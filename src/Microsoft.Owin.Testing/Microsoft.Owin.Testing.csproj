@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Testing</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTargetFramework)</TargetFramework>
+		<description>Provides helper classes for unit testing OWIN components.</description>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Owin" Version="$(OwinVersion)" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Microsoft.Owin.Hosting\Microsoft.Owin.Hosting.csproj" />
+	  <ProjectReference Include="..\Microsoft.Owin\Microsoft.Owin.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Net.Http" />
+	</ItemGroup>
+</Project>

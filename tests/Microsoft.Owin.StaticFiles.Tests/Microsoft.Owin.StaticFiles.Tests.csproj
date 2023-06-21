@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.StaticFiles.Tests</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTestTargetFramework)</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Shouldly" Version="$(ShouldlyVersion)" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Microsoft.Owin.FileSystems\Microsoft.Owin.FileSystems.csproj" />
+		<ProjectReference Include="..\..\src\Microsoft.Owin.StaticFiles\Microsoft.Owin.StaticFiles.csproj" />
+		<ProjectReference Include="..\..\src\Microsoft.Owin.Testing\Microsoft.Owin.Testing.csproj" />
+		<ProjectReference Include="..\..\src\Microsoft.Owin\Microsoft.Owin.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="SubFolder\Extra.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<Content Include="SubFolder\Default.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="SubFolder\你好\Default.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="SubFolder\你好\世界\Default.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<None Include="SubFolder\Ranges.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	  <None Update="TestRootFile.xml">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+</Project>

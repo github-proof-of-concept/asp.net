@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Owin.Loader.Tests</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTestTargetFramework)</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Microsoft.Owin\Microsoft.Owin.csproj" />
+	  <ProjectReference Include="..\..\src\Owin.Loader\Owin.Loader.csproj" />
+	</ItemGroup>
+</Project>

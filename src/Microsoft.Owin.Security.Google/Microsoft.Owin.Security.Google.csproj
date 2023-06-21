@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Microsoft.Owin.Security.Google</RootNamespace>
+		<TargetFramework>$(DefaultNetFxTargetFramework)</TargetFramework>
+		<description>Contains middlewares to support Google's OAuth 2.0 authentication workflow.</description>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+		<PackageReference Include="Owin" Version="$(OwinVersion)" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Microsoft.Owin.Security\Microsoft.Owin.Security.csproj" />
+		<ProjectReference Include="..\Microsoft.Owin\Microsoft.Owin.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="System.Net.Http" />
+	  <Reference Include="System.Net.Http.WebRequest" />
+	</ItemGroup>
+</Project>

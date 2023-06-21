@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Owin.Loader</RootNamespace>
+    <TargetFramework>$(DefaultNetFxTargetFramework)</TargetFramework>
+	<IsShipping>false</IsShipping>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Owin" Version="$(OwinVersion)" />
+	<InternalsVisibleTo Include="Owin.Loader.Tests" />
+  </ItemGroup>
+</Project>

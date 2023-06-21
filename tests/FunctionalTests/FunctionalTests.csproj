@@ -1,0 +1,182 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>Functional.Tests</RootNamespace>
+		<TargetFramework>net4.5.2</TargetFramework>
+		<SignAssembly>false</SignAssembly>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="LTAF.Infrastructure" Version="1.0.7" />
+		<PackageReference Include="Microsoft.Web.Administration" version="7.0.0.0" />
+		<PackageReference Include="Owin" Version="1.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Diagnostics\Microsoft.Owin.Diagnostics.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.FileSystems\Microsoft.Owin.FileSystems.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Host.HttpListener\Microsoft.Owin.Host.HttpListener.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Host.SystemWeb\Microsoft.Owin.Host.SystemWeb.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Hosting\Microsoft.Owin.Hosting.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.ActiveDirectory\Microsoft.Owin.Security.ActiveDirectory.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Cookies\Microsoft.Owin.Security.Cookies.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Facebook\Microsoft.Owin.Security.Facebook.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Google\Microsoft.Owin.Security.Google.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Jwt\Microsoft.Owin.Security.Jwt.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.MicrosoftAccount\Microsoft.Owin.Security.MicrosoftAccount.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.OAuth\Microsoft.Owin.Security.OAuth.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.OpenIdConnect\Microsoft.Owin.Security.OpenIdConnect.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.Twitter\Microsoft.Owin.Security.Twitter.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security.WsFederation\Microsoft.Owin.Security.WsFederation.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Security\Microsoft.Owin.Security.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.StaticFiles\Microsoft.Owin.StaticFiles.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin.Testing\Microsoft.Owin.Testing.csproj" />
+	  <ProjectReference Include="..\..\src\Microsoft.Owin\Microsoft.Owin.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Net.Http.WebRequest" />
+		<Reference Include="System.Web" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="packages.config" />
+		<None Include="RequirementFiles\ContentTypes\SampleCHM.CHM">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="RequirementFiles\ContentTypes\SampleCSV.csv">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="RequirementFiles\ContentTypes\SampleDOC.DOC">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="RequirementFiles\ContentTypes\SampleDOCX.docx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="RequirementFiles\ContentTypes\Unknown.Unknown">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="RequirementFiles\Dir1\Unknown.Unknown">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="RequirementFiles\Dir2\Unknown.Unknown">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleCHM.CHM" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleCSV.csv" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleDOC.DOC" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleDOCX.docx" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\Unknown.Unknown" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Facts\Security\Federation\federationmetadata.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Facts\Security\Federation\InvalidToken.xml">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="OwinWebConfigTemplate.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\BlockedFiles\clock%24.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\BlockedFiles\TextFile.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleAVI.avi">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleC.c">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleCPP.cpp">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleCSS.css">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleCUR.cur">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleDISCO.disco">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleHTM.htm">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleHTML.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleICO.ico">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleJPEG.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleJPG.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SampleJS.js">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\ContentTypes\SamplePNG.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Default.aspx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<SubType>ASPXCodeBehind</SubType>
+		</Content>
+		<Content Include="RequirementFiles\Dir1\Default.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir1\EmptyFile.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir1\RangeRequest.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir1\TextFile1.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir2\TextFile2.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir3\Dir31\TextFile311.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir3\Dir32\TextFile321.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir3\TextFile3.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir3\TextFile4.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Dir4\TextFile41.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleAVI.avi" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleC.c" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleCPP.cpp" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleCSS.css" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleCUR.cur" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleDISCO.disco" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleHTM.htm" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleHTML.html" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleICO.ico" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleJPEG.jpg" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleJPG.jpg" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SampleJS.js" />
+		<EmbeddedResource Include="RequirementFiles\EmbeddedResources\SamplePNG.png" />
+		<Content Include="RequirementFiles\IntegratedPipelineTest.aspx">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Templates\Login.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Templates\Logout.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="RequirementFiles\Templates\MainPage.html">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>
