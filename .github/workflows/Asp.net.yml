@@ -23,11 +23,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Publish
-      run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
-    - name: Upload a Build Artifact
+    - name: Upload dotnet test results
       uses: actions/upload-artifact@v3
       with:
-        name: website
-        path: SimpleFeedReader/website/**
-        if-no-files-found: error
+            name: dotnet-results-${{ matrix.dotnet-version }}
+            path: TestResults-${{ matrix.dotnet-version }}
